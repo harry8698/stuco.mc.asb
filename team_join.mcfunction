@@ -10,4 +10,6 @@ execute if score @e[limit=1,type=armor_stand,name=TeamSelector] blueTeam >= @e[l
 execute if score @e[limit=1,type=armor_stand,name=TeamSelector] blueTeam >= @e[limit=1,type=armor_stand,name=TeamSelector] redTeam run execute if score @e[limit=1,type=armor_stand,name=TeamSelector] temp = @e[limit=1,type=armor_stand,name=TeamSelector] blueTeam run title @p title [{"text":"You are team ","color":"white"},{"text":"RED","color":"red"}]
 execute if score @e[limit=1,type=armor_stand,name=TeamSelector] blueTeam >= @e[limit=1,type=armor_stand,name=TeamSelector] redTeam run execute if score @e[limit=1,type=armor_stand,name=TeamSelector] temp = @e[limit=1,type=armor_stand,name=TeamSelector] blueTeam run scoreboard players add @e[type=armor_stand,name=TeamSelector] redTeam 1
 
-function asb:team_check
+tp @a[distance=..1.5, team=blue] ~3 ~4 ~-7
+tp @a[distance=..1.5, team=red] ~-3 ~4 ~-7
+tp @a[distance=..1.5,team=!blue,team=!red] ~ ~-1 ~1

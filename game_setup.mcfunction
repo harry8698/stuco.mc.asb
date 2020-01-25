@@ -5,11 +5,15 @@ function asb:team_remove
 function asb:team_setup
 
 # open gates
-fill ~ ~12 ~3 ~ ~11 ~3 minecraft:air
+fill ~ ~12 ~3 ~ ~12 ~3 minecraft:magenta_glazed_terracotta[facing=east] replace stone_bricks
+fill ~ ~11 ~3 ~ ~10 ~3 minecraft:air replace bedrock
 
-# close red, blue room gates
-fill ~3 ~7 ~ ~3 ~6 ~ minecraft:bedrock replace air
-fill ~-3 ~7 ~ ~-3 ~6 ~ minecraft:bedrock replace air
+# close blue room gates
+fill ~3 ~7 ~ ~3 ~7 ~ minecraft:stone_bricks replace minecraft:magenta_glazed_terracotta
+fill ~3 ~6 ~ ~3 ~5 ~ minecraft:bedrock replace air
+# close red room gates
+fill ~-3 ~7 ~ ~-3 ~7 ~ minecraft:stone_bricks replace minecraft:magenta_glazed_terracotta
+fill ~-3 ~6 ~ ~-3 ~5 ~ minecraft:bedrock replace air
 
 # team player number indicator
 kill @e[type=armor_stand,name="TeamSelector"]
