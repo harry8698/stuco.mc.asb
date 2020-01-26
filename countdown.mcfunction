@@ -24,8 +24,8 @@ execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 80 run fil
 execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 80 run fill ~-2 ~6 ~ ~-2 ~6 ~ minecraft:magenta_glazed_terracotta[facing=east] replace stone_bricks
 execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 80 run fill ~-2 ~5 ~ ~-2 ~4 ~ air replace bedrock
 # 4 sec: close main gate
-execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 80 run fill ~1 ~12 ~3 ~1 ~12 ~3 minecraft:stone_bricks replace magenta_glazed_terracotta
-execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 80 run fill ~1 ~11 ~3 ~1 ~10 ~3 bedrock replace air
+execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 80 run fill ~1 ~11 ~3 ~1 ~11 ~3 minecraft:stone_bricks replace magenta_glazed_terracotta
+execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 80 run fill ~1 ~10 ~3 ~1 ~9 ~3 bedrock replace air
 
 execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 85 run setblock ~ ~ ~ air
 execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 85 run kill @e[type=armor_stand,name=Timer]
