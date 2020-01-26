@@ -4,18 +4,26 @@ scoreboard players add @e[type=armor_stand,name=Timer] time 1
 # 1 sec
 execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 20 run title @a[team=red] title [{"text":"3","color":"red"}]
 execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 20 run title @a[team=blue] title [{"text":"3","color":"blue"}]
+execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 20 run playsound block.stone_button.click_on master @a[team=red]
+execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 20 run playsound block.stone_button.click_on master @a[team=blue]
 
 # 2 sec
 execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 40 run title @a[team=red] title [{"text":"2","color":"red"}]
 execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 40 run title @a[team=blue] title [{"text":"2","color":"blue"}]
+execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 40 run playsound block.stone_button.click_on master @a[team=red]
+execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 40 run playsound block.stone_button.click_on master @a[team=blue]
 
 # 3 sec
 execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 60 run title @a[team=red] title [{"text":"1","color":"red"}]
 execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 60 run title @a[team=blue] title [{"text":"1","color":"blue"}]
+execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 60 run playsound block.stone_button.click_on master @a[team=red]
+execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 60 run playsound block.stone_button.click_on master @a[team=blue]
 
 # 4 sec
 execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 80 run title @a[team=red] title [{"text":"START!","color":"red"}]
 execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 80 run title @a[team=blue] title [{"text":"START!","color":"blue"}]
+execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 80 run playsound block.stone_button.click_on master @a[team=red]
+execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 80 run playsound block.stone_button.click_on master @a[team=blue]
 
 # 4 sec: opens blue gates
 execute if score @e[limit=1,type=armor_stand,name=Timer] time matches 80 run fill ~4 ~6 ~ ~4 ~6 ~ minecraft:magenta_glazed_terracotta[facing=east] replace stone_bricks
