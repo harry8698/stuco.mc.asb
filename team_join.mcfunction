@@ -12,3 +12,4 @@ execute if score @e[limit=1,type=armor_stand,name=TeamSelector] blueTeam >= @e[l
 
 tp @a[distance=..1.5, team=blue] ~3 ~4 ~-7
 tp @a[distance=..1.5, team=red] ~-3 ~4 ~-7
+tp @a[distance=..1.5,team=!blue,team=!red] ~ ~-2 ~1
